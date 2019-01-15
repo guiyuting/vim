@@ -4,8 +4,8 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
@@ -16,7 +16,6 @@ Bundle 'majutsushi/tagbar'
 Bundle 'Raimondi/delimitMate'
 
 "snipmate.vim
-"Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "honza/vim-snippets"
 Bundle 'garbas/vim-snipmate'
@@ -40,26 +39,12 @@ Bundle 'vim-scripts/a.vim'
 Bundle "lepture/vim-jinja"
 Bundle 'pangloss/vim-javascript'
 
-" For octave and Matlab highlighting
-Bundle 'nvie/vim-flake8'
-Bundle 'jvirtanen/vim-octave'
-
 " NERDTree
 Bundle 'scrooloose/nerdtree'
 
 " Python-mode
 "Bundle 'klen/python-mode'
 
-" Lua
-Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-lua-ftplugin'
-let g:lua_complete_omni = 0
-let g:lua_compiler_name = '/usr/local/bin/luac'
-let b:lua_compiler_name = '/usr/local/bin/lualint'
-let g:lua_safe_omni_modules = 1
-
-" CUDA
-Bundle 'jakezhaojb/snipmate-snippets-cuda'
 
 filetype plugin indent on     " required!
 
@@ -231,4 +216,4 @@ let g:snipMate = {}
 let g:snipMate.scope_aliases = {}
 let g:snipMate.scope_aliases['cuda'] = 'cu'
 
-imap ff <Esc>
+imap hh <Esc>
