@@ -9,6 +9,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
+Bundle 'VundleVim/Vundle.vim'
+
 Bundle 'gmarik/vundle'
 Bundle 'tomasr/molokai'
 Bundle 'Lokaltog/vim-powerline'
@@ -16,8 +18,9 @@ Bundle 'majutsushi/tagbar'
 Bundle 'Raimondi/delimitMate'
 
 "snipmate.vim
-Bundle "tomtom/tlib_vim"
-Bundle "honza/vim-snippets"
+Bundle 'marcweber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 Bundle 'editorconfig/editorconfig-vim'
 
@@ -36,7 +39,7 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'vim-scripts/Python-Syntax-Folding'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/a.vim'
-Bundle "lepture/vim-jinja"
+Bundle 'lepture/vim-jinja'
 Bundle 'pangloss/vim-javascript'
 
 " NERDTree
@@ -45,7 +48,7 @@ Bundle 'scrooloose/nerdtree'
 " Python-mode
 "Bundle 'klen/python-mode'
 
-
+call vundle#end()            " required
 filetype plugin indent on     " required!
 
 """
@@ -103,15 +106,18 @@ autocmd FileType yaml setlocal sw=2 ts=2
 " colorscheme
 """
 " Molokai
-colorscheme molokai
-set background=dark
-let g:molokai_original = 1
+"colorscheme molokai
+"set background=dark
+"let g:molokai_original = 1
 set t_Co=256
 let g:Powerline_symbols = 'fancy'
 " Solarized"
 "set background=dark
 "colorscheme solarized
 "let g:solarized_termcolors=256
+
+let g:gruvbox_italic=1
+colorscheme gruvbox
 
 
 """
@@ -216,4 +222,4 @@ let g:snipMate = {}
 let g:snipMate.scope_aliases = {}
 let g:snipMate.scope_aliases['cuda'] = 'cu'
 
-imap hh <Esc>
+imap ff <Esc>
